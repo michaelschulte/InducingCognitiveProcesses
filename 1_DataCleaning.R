@@ -5,8 +5,8 @@
 
 # clean slate
 rm(list=ls(all=TRUE))
-# set working directory 
-setwd("~/Dropbox (2.0)/4_ProcessTracingProjects/SalzburgEyetracking/GitHubRepo/InducingCognitiveProcesses") # MODIFY!!
+# set working directory to lacation of source file
+setwd("InducingCognitiveProcesses") # MODIFY!!
 # load raw data
 raw <- readRDS(file = 'data/raw.RDS')
 
