@@ -8,7 +8,7 @@ rm(list=ls(all=TRUE))
 # set working directory 
 setwd("~/Dropbox (2.0)/4_ProcessTracingProjects/SalzburgEyetracking/GitHubRepo/InducingCognitiveProcesses") # MODIFY!!
 # load raw data
-readRDS(file = 'data/raw.RDS')
+raw <- readRDS(file = 'data/raw.RDS')
 
 # packages we need
 require(car)
@@ -27,6 +27,7 @@ raw$type <- ifelse(raw$type=='g', "O", "P")
 # rename position in orientation 
 # recode from h,q to h,v
 raw$orient <- ifelse(as.character(raw$orientation)=='h', "h", "v")
+raw$orientation <- NULL
 
 # add setup of gambles
 stimcode_extract <- strsplit(as.character(raw$stimcode), '_')
@@ -178,7 +179,7 @@ raw <- merge(raw, conditions_for_merge, by.x = 'vp', by.y = 'vp')
 # raw[raw$gamble == '24',]$PH <- recode(raw[raw$gamble == '24',]$AOI, "'g1s1'='max'; 'c1s1'='max'; 'g2s1'='min';  'c2s1'='min';   'g1s2'='min';  'c1s2'='min';  'g2s2'='2nd';	'c2s2'='2nd'")
 
 # housekeeping
-remove(conditions, conditions_for_merge, lines, stimulus_counter, i, stimcode_extract)
+remove(conditions, conditions_for_merge, lines, i, stimulus_counter, stimcode_extract)
 
 # save raw clean data file 
 saveRDS(raw, file = "data/raw_clean.RDS")
