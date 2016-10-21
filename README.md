@@ -4,8 +4,7 @@ Inferring cognitive processes from observational data is a central element in th
 
 Variable description:
 
- $ vp         : num  1 1 1 1 1 1 1 1 1 1 ... : subject number
- 
+ $ vp         : num  1 1 1 1 1 1 1 1 1 1 ... : subject number \newline
  $ list       : Factor w/ 8 levels "l1","l2","l3",..: 1 1 1 1 1 1 1 1 1 1 ... : counter balancing list
  
  $ gamble     : chr  "1" "1" "1" "1" ...
