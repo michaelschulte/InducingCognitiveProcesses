@@ -1,6 +1,9 @@
-# InducingCognitiveProcesses
+# Inducing Thought Processes
 
-Inferring cognitive processes from observational data is a central element in the study of cognition. The assumption of a link between the observation of a process and the directly related cognitive process may, however, fall prey to a misattribution between the two. To improve our understanding of this mapping we collected eye-movement data from participants making decisions in risky gambles while either being instructed to use a specific strategy (expected value or lexicographic heuristic), or without a strategy instruction. We measured information acquisition patterns and attention to specific dimensions of the gambles. 
+This repository contains data collected for:
+Schulte-Mecklenbeck, M., Kühberger, A., Gagl, B., & Hutzler, F. (2017). Inducing Thought Processes: Bringing Process Measures and Cognitive Processes Closer Together. Journal of Behavioral Decision Making.
+
+The challenge in inferring cognitive processes from observational data is to correctly align overt behavior with its covert cognitive process. To improve our understanding of the overt–covert mapping in the domain of decision making, we collected eye-movement data during decisions between gamble-problems. Participants were either free to choose or instructed to use a specific choice strategy (maximizing expected value or a choice heuristic). We found large differences in looking patterns between free and instructed choices. However, looking patterns provided no support for the common assumption that attention is equally distributed between outcomes and probabilities, even when participants were instructed to maximize expected value. Eye-movement data are to some extent ambiguous with respect to underlying cognitive processes.
 
 Variable description:
 
