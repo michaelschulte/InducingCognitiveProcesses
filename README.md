@@ -6,7 +6,7 @@ Schulte-Mecklenbeck, M., Kühberger, A., Gagl, B., & Hutzler, F. (2017). Inducin
 The challenge in inferring cognitive processes from observational data is to correctly align overt behavior with its covert cognitive process. To improve our understanding of the overt–covert mapping in the domain of decision making, we collected eye-movement data during decisions between gamble-problems. Participants were either free to choose or instructed to use a specific choice strategy (maximizing expected value or a choice heuristic). We found large differences in looking patterns between free and instructed choices. However, looking patterns provided no support for the common assumption that attention is equally distributed between outcomes and probabilities, even when participants were instructed to maximize expected value. Eye-movement data are to some extent ambiguous with respect to underlying cognitive processes.
 
 Variable description:
-
+~~~~
  $ vp         : num  1 1 1 1 1 1 1 1 1 1 ... : subject number
  
  $ list       : Factor w/ 8 levels "l1","l2","l3",..: 1 1 1 1 1 1 1 1 1 1 ... : counter balancing list
@@ -80,3 +80,4 @@ Variable description:
  $ order      : Factor w/ 4 levels "EV FREE","FREE EV",..: 3 3 3 3 3 3 3 3 3 3 ...
  
  $ PH         : chr  "min" "min" "min" "2nd" ...
+~~~~
