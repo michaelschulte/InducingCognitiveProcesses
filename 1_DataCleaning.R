@@ -1,14 +1,9 @@
 # Inducing Cognitive Processes
 # Michael Schulte-Mecklenbeck
-# Scripts for: Schulte-Mecklenbeck, M., Kuhberger, A., Gagl, S., & Hutzler, F. (submitted). 
-# Inducing Cognitive Processes: Bringing Process Measures and Cognitive Processes Closer Together
+# Scripts for: Schulte-Mecklenbeck, M., Kühberger, A., Gagl, S., & Hutzler, F. (2017). Inducing thought processes: Bringing process measures and cognitive processes closer together. Journal of Behavioral Decision Making, 30(5), 1001-1013.
 
-# clean slate
-rm(list=ls(all=TRUE))
-# set working directory to lacation of source file
-setwd("InducingCognitiveProcesses") # MODIFY!!
 # load raw data
-raw <- readRDS(file = 'data/raw.RDS')
+raw <- readRDS(file = 'data/1_raw.RDS')
 
 # packages we need
 require(car)
@@ -182,4 +177,4 @@ raw <- merge(raw, conditions_for_merge, by.x = 'vp', by.y = 'vp')
 remove(conditions, conditions_for_merge, lines, i, stimulus_counter, stimcode_extract)
 
 # save raw clean data file 
-saveRDS(raw, file = "data/raw_clean.RDS")
+saveRDS(raw, file = "data/2_raw_clean.RDS")
